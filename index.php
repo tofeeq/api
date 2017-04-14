@@ -1,6 +1,6 @@
 <?php
 require 'Api.php';
 
-$results = Api::get('accounts/listtags');
+$results = Api::request('GET', 'accounts/listtags');
 print_r($results);
 ?>

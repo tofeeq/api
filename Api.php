@@ -81,7 +81,7 @@ class Api {
 
 
 
-	public static function get($endpoint, $params = null) {
+	public static function request($method = 'GET', $endpoint, $params = null) {
 
 		$query = [
 				'query'	=> $params
@@ -91,7 +91,7 @@ class Api {
 
 		try {
 
-			$response = self::client()->request('GET', $endpoint, $query);
+			$response = self::client()->request($method, $endpoint, $query);
 
 			return self::parseResponse($response);
 

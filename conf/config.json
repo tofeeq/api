@@ -1,6 +1,6 @@
 {
 	"api_key" 	: "your api key",
 	"api_secret" : "your api secret",
-	"authorization" : "basic or digest or simple",
+	"authorization" : "basic -or- digest -or- simple",
 	"api_end_point" : "http://your-api-end-point"
 }
